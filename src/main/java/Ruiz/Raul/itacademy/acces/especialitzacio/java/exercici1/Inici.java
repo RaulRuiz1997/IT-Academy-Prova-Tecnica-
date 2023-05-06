@@ -7,7 +7,7 @@ public class Inici {
     public static void main(String[] args) {
 
         Document documentTest = new Document();
-        ArrayList<String> paragrafs = new ArrayList<>();
+        ArrayList<String> paragrafs;
 
         System.out.println(documentTest.getNombreParagrafs()); //Mostra el resultat a la consola
 
@@ -38,6 +38,11 @@ public class Inici {
         paragrafs = documentTest.getParagrafs();
 
         paragrafs.forEach(System.out::println);
+
+        // Hago el bucle for para que veais otra manera de obtener los resultados
+        /*for (int i = 0; i < paragrafs.size(); i++) {
+            System.out.println(paragrafs.get(i));
+        }*/
 
     }
 

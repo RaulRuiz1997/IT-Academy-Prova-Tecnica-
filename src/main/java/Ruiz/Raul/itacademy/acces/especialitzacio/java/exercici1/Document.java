@@ -30,7 +30,7 @@ public class Document {
     }
 
     public int getNombreParagrafs() {
-        // Devolvemos el tamaño del arrai para saber el numero de paragrafos que tenemos en la lista
+        // Devolvemos el tamaño del array para saber el número de paragrafos que tenemos en la lista
         return paragrafs.size();
     }
 
@@ -47,7 +47,7 @@ public class Document {
 
     public void setParagraf(int posicio, String paragraf) {
 
-        // Si la posicion indicada ya existe en la lista, reemplazamos el valor por el nuevo, sino, la añadimos
+        // Si la posicion indicada ya existe en la lista, reemplazamos el valor por el nuevo, si no, la añadimos
         if (posicio < paragrafs.size()) {
             paragrafs.set(posicio, paragraf);
         } else {
